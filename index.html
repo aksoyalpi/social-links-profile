@@ -10,25 +10,95 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    footer {
+      position: absolute;
+      bottom: 0;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: white;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    p {font-size: 14px;}
+    .container {
+      padding: 40px 30px;
+      border-radius: 12px;
+      width: 320px;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-pic {
+      border-radius: 200px;
+      width: 100px;
+    }
+    .info {
+      text-align: center;
+    }
+    .name {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: -10px;
+    }
+    .city {
+      font-weight: 400;
+      color: hsl(75, 94%, 57%);
+    }
+    .description {font-weight: 400; color: hsl(0, 0%, 75%);}
+    .links a {
+      height: 50px;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background-color: hsl(0, 0%, 20%);
+      width: 100%;
+      margin: 7px 0;
+    }
+    .links a:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: black;
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
   </style>
 </head>
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <img alt="Profile picture" src="assets/images/avatar-jessica.jpeg" class="profile-pic"/>
+    <div class="info">
+      <p class="name">Jessica Randall</p>
+      <p class="city">London, United Kingdom</p>
+    </div>
+    <p class="description">"Front-end developer and avid reader."</p>
+    <div class="links">
+      <a href="">GitHub</a>
+      <a href="">Frontend Mentor</a>
+      <a href="">LinkedIn</a>
+      <a href="">Twitter</a>
+      <a href="">Instagram</a>
+    </div>
   </div>
 </body>
+<footer class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://alperenaksoy.de">Alperen Aksoy</a>.
+</footer>
 </html>
